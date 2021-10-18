@@ -1,4 +1,4 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 public class Users {
     public String email;

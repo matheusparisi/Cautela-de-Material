@@ -1,4 +1,4 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,9 +12,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.InputFilter;
 import android.text.Spanned;
-import android.text.TextUtils;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;

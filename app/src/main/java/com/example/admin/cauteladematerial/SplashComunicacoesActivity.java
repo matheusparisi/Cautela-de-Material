@@ -1,8 +1,7 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;

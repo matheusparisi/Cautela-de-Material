@@ -1,7 +1,6 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 import android.Manifest;
-import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -12,7 +11,7 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class EscanearQrcodeCautelarMilitarActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class EscanearQrcodeCautelarDoInventarioMaterialActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     int MY_PERMISSIONS_REQUEST_CAMERA=0;
 
@@ -27,7 +26,7 @@ public class EscanearQrcodeCautelarMilitarActivity extends AppCompatActivity imp
     @Override
     public void handleResult(Result result) {
 
-        CautelarActivity.resulttextview2.setText(result.getText());
+        CautelarDoInventarioActivity.resulttextview.setText(result.getText());
 
         onBackPressed();
     }

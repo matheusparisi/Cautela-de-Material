@@ -1,18 +1,17 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 import android.Manifest;
-import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class EscanearQrcodeDescautelarMaterialActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class EscanearQrcodeAdicionarAoInventarioMaterialActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     int MY_PERMISSIONS_REQUEST_CAMERA=0;
 
@@ -27,7 +26,7 @@ public class EscanearQrcodeDescautelarMaterialActivity extends AppCompatActivity
     @Override
     public void handleResult(Result result) {
 
-        DescautelarActivity.resultdeleteview.setText(result.getText());
+        AdicionarAoInventarioActivity.itemmaterialETQRCODE.setText(result.getText());
 
         onBackPressed();
     }

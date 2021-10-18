@@ -1,21 +1,16 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputFilter;
 import android.text.Spanned;
 import android.text.TextUtils;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,14 +22,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class EditarInventarioActivity extends AppCompatActivity {
+public class AdicionarAoInventarioActivity extends AppCompatActivity {
     private EditText iteminfoET, itemmaterialET, itemquantiaET;
     public static TextView itemmaterialETQRCODE;
     private FirebaseAuth firebaseAuth;
     private DBHelper dbHelper;
     ImageButton scanbutton, scanbutton2, scanbutton3, scanbutton5;
     Button additemtodatabase;
-    DatabaseReference mdatabaseReference;
+    DatabaseReference databaseReference;
 
     private String blockCharacterSet = (".#$[]@_&*:;!?~\"`•\\√π÷×¶∆£¢€¥^°{}©®™✓[]<>/'");
 
@@ -65,54 +60,43 @@ public class EditarInventarioActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editar_inventario);
+        setContentView(R.layout.activity_adicionar_inventario);
+
         firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser users = firebaseAuth.getCurrentUser();
         String finaluser = users.getEmail();
         String resultemail = finaluser.replace(".", "");
-        mdatabaseReference = FirebaseDatabase.getInstance().getReference("Users").child(resultemail).child("Inventario");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
 
 // INICIO BANCO DE DADOS LOCAL
         System.setProperty("org.apache.poi.javax.xml.stream.XMLInputFactory", "com.fasterxml.aalto.stax.InputFactoryImpl");
         System.setProperty("org.apache.poi.javax.xml.stream.XMLOutputFactory", "com.fasterxml.aalto.stax.OutputFactoryImpl");
         System.setProperty("org.apache.poi.javax.xml.stream.XMLEventFactory", "com.fasterxml.aalto.stax.EventFactoryImpl");
-        dbHelper = new DBHelper(EditarInventarioActivity.this);
+        dbHelper = new DBHelper(AdicionarAoInventarioActivity.this);
 // FIM BANCO DE DADOS LOCAL
 
 // INICIO EDITTEXT
         iteminfoET = findViewById(R.id.editinfo);
         itemmaterialET = findViewById(R.id.editmaterial);
-        itemmaterialET.setFilters(new InputFilter[] { filter });
         itemmaterialETQRCODE = findViewById(R.id.editmaterial);
         itemmaterialETQRCODE.setFilters(new InputFilter[] { filter });
+        itemmaterialET.setFilters(new InputFilter[] { filter });
         itemquantiaET = findViewById(R.id.editquantia);
 // FIM EDITTEXT
 
-// INICIO BOTOES
+// INICIO OBJETOS
         additemtodatabase = findViewById(R.id.additembuttontodatabase);
         scanbutton = findViewById(R.id.buttonscan);
         scanbutton2 = findViewById(R.id.buttonscan2);
         scanbutton3 = findViewById(R.id.buttonscan3);
         scanbutton5 = findViewById(R.id.buttonscan5);
-// FIM BOTOES
+// FIM OBJETOS
 
-
-// INICIO PUXAR INFORMAÇÕES
-        Intent intent = getIntent();
-        String materialkey = intent.getStringExtra("material_key");
-        String infokey = intent.getStringExtra("info_key");
-        String quantiakey = intent.getStringExtra("quantia_key");
-        itemmaterialET.setText(materialkey);
-        iteminfoET.setText(infokey);
-        itemquantiaET.setText(quantiakey);
-// FIM PUXAR INFORMAÇÕES
-
-// INICIO FUNÇAO BOTOES
+// INICIO FUNÇAO OBJETOS
         scanbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                itemmaterialET.clearFocus();
-                startActivity(new Intent(getApplicationContext(), EscanearQrcodeEditarInventarioMaterialActivity.class));
+                startActivity(new Intent(getApplicationContext(), EscanearQrcodeAdicionarAoInventarioMaterialActivity.class));
             }
         });
 
@@ -166,38 +150,24 @@ public class EditarInventarioActivity extends AppCompatActivity {
         });
 
     }
-// FIM FUNÇAO BOTOES
+// FIM FUNÇAO OBJETOS
 
 // INICIO ADICIONAR NA PLANILHA
     private void salvarnaPlanilha() {
 
-        Intent intent = getIntent();
-        String itemmilitar = intent.getStringExtra("militar_key");
-        String itemdata = intent.getStringExtra("data_key");
-        String itemano = intent.getStringExtra("ano_key");
-        String itemmes = intent.getStringExtra("mes_key");
-        String itemdestino = "Inventario";
-        String itemtipo = "Editado";
+        String itemmilitar = "Sistema";
         String iteminfo = iteminfoET.getText().toString();
+        String itemdata = formatodatahora.format(calendar.getTime());
+        String itemano = formatoano.format(calendar.getTime());
+        String itemmes = formatomes.format(calendar.getTime());
+        String itemdestino = "Inventario";
+        String itemtipo = "Adicionado";
         String itemmaterial = itemmaterialET.getText().toString();
         String itemquantia = itemquantiaET.getText().toString();
 
-
-        //check edit text data
-        if (TextUtils.isEmpty(itemmaterial)) {
-            itemmaterialET.setError("Vazio");
-            itemmaterialET.requestFocus();
-            return;
-        }
-        if (TextUtils.isEmpty(itemquantia)) {
-            itemquantiaET.setError("Vazio");
-            itemquantiaET.requestFocus();
-            return;
-        }
-        if (TextUtils.isEmpty(iteminfo)) {
-            iteminfoET.setError("Vazio");
-            iteminfoET.requestFocus();
-            return;
+        if (!TextUtils.isEmpty(itemmaterial) && !TextUtils.isEmpty(itemquantia) && !TextUtils.isEmpty(iteminfo)) {
+        }else{
+            Toast.makeText(AdicionarAoInventarioActivity.this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
         }
 
         Items itemsModel = new Items(itemmilitar, iteminfo, itemdata, itemano, itemmes, itemdestino, itemtipo, itemmaterial, itemquantia);
@@ -206,7 +176,7 @@ public class EditarInventarioActivity extends AppCompatActivity {
         if (id > 0) {
             additem();
         } else {
-            Toast.makeText(EditarInventarioActivity.this, "Algo deu errado\nErro (x0001)", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AdicionarAoInventarioActivity.this, "Algo deu errado\nErro (x0001)", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -215,30 +185,30 @@ public class EditarInventarioActivity extends AppCompatActivity {
 // INICIO ADICIONAR ITEM AO BANCO DE DADOS
     public void additem() {
 
-        Intent intent = getIntent();
-        String itemmilitar = intent.getStringExtra("militar_key");
-        String itemdata = intent.getStringExtra("data_key");
-        String itemano = intent.getStringExtra("ano_key");
-        String itemmes = intent.getStringExtra("mes_key");
-        String removeritemmaterial = intent.getStringExtra("material_key");
+        String itemmilitar = "Sistema";
+        String iteminfo = iteminfoET.getText().toString();
+        String itemdata = formatodatahora.format(calendar.getTime());
+        String itemano = formatoano.format(calendar.getTime());
+        String itemmes = formatomes.format(calendar.getTime());
         String itemdestino = "Inventario";
         String itemtipo = "Inventario";
-        String iteminfo = iteminfoET.getText().toString();
         String itemmaterial = itemmaterialET.getText().toString();
         String itemquantia = itemquantiaET.getText().toString();
 
-        if (!TextUtils.isEmpty(itemmaterial) && !TextUtils.isEmpty(iteminfo) && !TextUtils.isEmpty(itemquantia)) {
+        final FirebaseUser users = firebaseAuth.getCurrentUser();
+        String finaluser = users.getEmail();
+        String resultemail = finaluser.replace(".", "");
 
-            Items editarinventario = new Items(itemmilitar, iteminfo, itemdata, itemano, itemmes, itemdestino, itemtipo, itemmaterial, itemquantia);
+        if (!TextUtils.isEmpty(itemmaterial) && !TextUtils.isEmpty(itemquantia) && !TextUtils.isEmpty(iteminfo)) {
 
-            mdatabaseReference.child(removeritemmaterial).removeValue();
-            mdatabaseReference.child(itemmaterial).setValue(editarinventario);
+            Items items = new Items(itemmilitar, iteminfo, itemdata, itemano, itemmes, itemdestino, itemtipo, itemmaterial, itemquantia);
+            databaseReference.child(resultemail).child("Inventario").child(itemmaterial).setValue(items);
+            itemquantiaET.setText("1");
+            itemmaterialET.setText("");
+            iteminfoET.setText("");
 
-            finish();
-
-            Toast.makeText(EditarInventarioActivity.this, itemmaterial + "\nEditado com sucesso", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AdicionarAoInventarioActivity.this, itemmaterial + "\nAdicionado com sucesso", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(EditarInventarioActivity.this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
         }
     }
 // FIM ADICIONAR ITEM AO BANCO DE DADOS

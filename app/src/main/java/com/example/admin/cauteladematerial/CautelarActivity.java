@@ -1,4 +1,4 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

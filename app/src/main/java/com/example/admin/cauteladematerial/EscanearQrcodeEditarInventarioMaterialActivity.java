@@ -1,4 +1,4 @@
-package com.example.admin.augscan;
+package com.example.admin.cauteladematerial;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -11,7 +11,7 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class EscanearQrcodeBuscarInventarioActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class EscanearQrcodeEditarInventarioMaterialActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     int MY_PERMISSIONS_REQUEST_CAMERA=0;
 
@@ -26,7 +26,7 @@ public class EscanearQrcodeBuscarInventarioActivity extends AppCompatActivity im
     @Override
     public void handleResult(Result result) {
 
-        BuscarInventarioActivity.resultsearcheview.setText(result.getText());
+        EditarInventarioActivity.itemmaterialETQRCODE.setText(result.getText());
 
         onBackPressed();
     }
