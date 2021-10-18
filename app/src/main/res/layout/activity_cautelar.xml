@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:background="@drawable/background_gradient">
+
+    <EditText
+        android:id="@+id/editmilitar"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/buttonscan"
+        android:background="@color/azul2"
+        android:drawableStart="@drawable/ic_qrcode_branco_24dp"
+        android:padding="1dp"
+        android:ems="10"
+        android:hint="Militar"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#9CFFFFFF"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editmaterial"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editmilitar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/buttonscan2"
+        android:background="@color/azul2"
+        android:drawableStart="@drawable/ic_qrcode_branco_24dp"
+        android:padding="1dp"
+        android:ems="10"
+        android:hint="Material"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#9CFFFFFF"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/buttonscan4"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/azul1"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_preencher_branco_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/buttonscan2"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/azul1"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_camera_branco_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/buttonscan"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/azul1"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_camera_branco_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/buttonscan3"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/azul1"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_adicionar_branco_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/buttonscan5"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="47dp"
+        android:layout_toStartOf="@+id/buttonscan3"
+        android:backgroundTint="@color/azul1"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_diminuir_branco_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/editinfo"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editquantia"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/buttonscan4"
+        android:background="@color/azul2"
+        android:drawableStart="@drawable/ic_comentario2_branco_24dp"
+        android:ems="10"
+        android:hint="Informações"
+        android:inputType="text"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#9CFFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/iconedestino"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editinfo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="78dp"
+        android:background="@color/azul2"
+        android:padding="2dp"
+        android:drawableStart="@drawable/ic_local_branco_24dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDestinos"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editinfo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="27dp"
+        android:dropDownSelector="@color/azul2"
+        android:gravity="center"
+        android:popupBackground="@color/azul2"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editquantia"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editmaterial"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/buttonscan5"
+        android:background="@color/azul2"
+        android:drawableStart="@drawable/ic_quantia_branco_24dp"
+        android:ems="10"
+        android:hint="Quantia"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#9CFFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/additembuttontodatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:background="@color/azul1"
+        android:textAlignment="center"
+        android:text="Cautelar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

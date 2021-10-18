@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu_branco_24dp"
+        android:title="Menu"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/descautelarMenu"
+                android:icon="@drawable/ic_seta_baixo_azul_24dp"
+                android:orderInCategory="300"
+                android:title="Descautelar"
+                app:showAsAction="collapseActionView">
+
+            </item>
+
+        </menu>
+
+
+    </item>
+</menu>

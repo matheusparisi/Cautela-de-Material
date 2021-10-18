@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu_branco_24dp"
+        android:title="Menu"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/logoutMenu"
+                android:icon="@drawable/ic_cadeado_aberto_azul_24dp"
+                android:orderInCategory="300"
+                android:title="Deslogar"
+                app:showAsAction="collapseActionView"></item>
+
+            <item
+                android:id="@+id/planilhaMenu"
+                android:icon="@drawable/ic_excel_azul_20dp"
+                android:orderInCategory="100"
+                android:title="Planilha"
+                app:showAsAction="collapseActionView">
+            </item>
+
+            <!--<item-->
+
+            <!--android:id="@+id/SettingMenu"-->
+            <!--android:orderInCategory="200"-->
+            <!--android:title="Setting"-->
+            <!--android:icon="@drawable/ic_settings_blue_24dp"-->
+            <!--app:showAsAction="collapseActionView">-->
+            <!--</item>-->
+
+        </menu>
+
+
+    </item>
+</menu>

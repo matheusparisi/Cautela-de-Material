@@ -1,0 +1,355 @@
+{
+  "Users" : {
+    "apoudel143" : {
+      "deptname" : "tata",
+      "email" : "apoudel143@gmail.com"
+    },
+    "arjanpdl" : {
+      "deptname" : "Computer",
+      "email" : "arjanpdl@gmail.com"
+    },
+    "arplon" : {
+      "email" : "arplon@gmail.com",
+      "name" : "help"
+    },
+    "aryal33" : {
+      "email" : "aryal33@gmail.com",
+      "name" : "Arjan"
+    },
+    "augscan" : {
+      "deptname" : "hell",
+      "email" : "augscan@gmail.com"
+    },
+    "canderson" : {
+      "deptname" : "kk",
+      "email" : "canderson@mcneese.edu"
+    },
+    "cateander27" : {
+      "deptname" : "lab",
+      "email" : "cateander27@gmail.com"
+    },
+    "dipesh@gmailcom" : {
+      "ItemByCategory" : {
+        "inventory" : {
+          "853158004112" : {
+            "itemmaterial" : "853158004112",
+            "iteminfo" : "inventory",
+            "itemmilitar" : "alkaline ",
+            "itemdata" : "500"
+          }
+        }
+      },
+      "UserDetails" : {
+        "deptname" : "Comp",
+        "email" : "dipesh@gmail.com"
+      }
+    },
+    "finally" : {
+      "email" : "finally@gmail.com",
+      "name" : "Dept"
+    },
+    "hellll1111gmailcom" : {
+      "email" : "hellll1111@gmail.com",
+      "name" : "hell"
+    },
+    "help" : {
+      "deptname" : "help",
+      "email" : "help@gmail.com"
+    },
+    "help123" : {
+      "deptname" : "hel",
+      "email" : "help123@gmail.com"
+    },
+    "heven@gmailcom" : {
+      "ItemByCategory" : {
+        "Flowe" : {
+          "JOHN DOE" : {
+            "itemmaterial" : "JOHN DOE",
+            "iteminfo" : "Flowe",
+            "itemmilitar" : "Rose",
+            "itemdata" : "10"
+          }
+        },
+        "Food" : {
+          "04963406" : {
+            "itemmaterial" : "04963406",
+            "iteminfo" : "Food",
+            "itemmilitar" : "Coke",
+            "itemdata" : "2"
+          },
+          "078742051451" : {
+            "itemmaterial" : "078742051451",
+            "iteminfo" : "Food",
+            "itemmilitar" : "water",
+            "itemdata" : "2"
+          },
+          "5014016150821" : {
+            "itemmaterial" : "5014016150821",
+            "iteminfo" : "Food",
+            "itemmilitar" : "choclate",
+            "itemdata" : "2"
+          },
+          "5901234123457" : {
+            "itemmaterial" : "5901234123457",
+            "iteminfo" : "Food",
+            "itemmilitar" : "Water",
+            "itemdata" : "10"
+          }
+        },
+        "Liquor" : {
+          "11410334" : {
+            "itemmaterial" : "11410334",
+            "iteminfo" : "Liquor",
+            "itemmilitar" : "wine",
+            "itemdata" : "10"
+          }
+        },
+        "Person" : {
+          "1234567890" : {
+            "itemmaterial" : "1234567890",
+            "iteminfo" : "Person",
+            "itemmilitar" : "Hello",
+            "itemdata" : "6000"
+          },
+          "812345000009" : {
+            "itemmaterial" : "812345000009",
+            "iteminfo" : "Person",
+            "itemmilitar" : "Arjan",
+            "itemdata" : "600000"
+          }
+        },
+        "air" : {
+          "046500766510" : {
+            "itemmaterial" : "046500766510",
+            "iteminfo" : "air",
+            "itemmilitar" : "hello",
+            "itemdata" : "6"
+          }
+        },
+        "phone" : {
+          "036000291452" : {
+            "itemmaterial" : "036000291452",
+            "iteminfo" : "phone",
+            "itemmilitar" : "iphone",
+            "itemdata" : "100"
+          }
+        }
+      },
+      "Items" : {
+        "02420677" : {
+          "itemmaterial" : "02420677",
+          "iteminfo" : "Clorex",
+          "itemmilitar" : "Purex",
+          "itemdata" : "10"
+        },
+        "04963406" : {
+          "itemmaterial" : "04963406",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Coke",
+          "itemdata" : "1"
+        },
+        "011111018457" : {
+          "itemmaterial" : "011111018457",
+          "iteminfo" : "Misc",
+          "itemmilitar" : "Dove",
+          "itemdata" : "6"
+        },
+        "022400723310" : {
+          "itemmaterial" : "022400723310",
+          "iteminfo" : "Spray",
+          "itemmilitar" : "Trey Semme",
+          "itemdata" : "13"
+        },
+        "043100095873" : {
+          "itemmaterial" : "043100095873",
+          "iteminfo" : "Stationary",
+          "itemmilitar" : "Copy",
+          "itemdata" : "5"
+        },
+        "046500733338" : {
+          "itemmaterial" : "046500733338",
+          "iteminfo" : "freshness",
+          "itemmilitar" : "glade spray",
+          "itemdata" : "20"
+        },
+        "046500766510" : {
+          "itemmaterial" : "046500766510",
+          "iteminfo" : "Spray",
+          "itemmilitar" : "Glade",
+          "itemdata" : "10"
+        },
+        "047400097728" : {
+          "itemmaterial" : "047400097728",
+          "iteminfo" : "Body",
+          "itemmilitar" : "Gillet",
+          "itemdata" : "3"
+        },
+        "051000217387" : {
+          "itemmaterial" : "051000217387",
+          "iteminfo" : "Juice",
+          "itemmilitar" : "v8 Juice",
+          "itemdata" : "10"
+        },
+        "071691525462" : {
+          "itemmaterial" : "071691525462",
+          "iteminfo" : "Misc",
+          "itemmilitar" : "Mug",
+          "itemdata" : "2"
+        },
+        "078742051451" : {
+          "itemmaterial" : "078742051451",
+          "iteminfo" : "Water",
+          "itemmilitar" : "Water",
+          "itemdata" : "6"
+        },
+        "078742252384" : {
+          "itemmaterial" : "078742252384",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Black Peper",
+          "itemdata" : "6"
+        },
+        "078742297026" : {
+          "itemmaterial" : "078742297026",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Almonds",
+          "itemdata" : "8"
+        },
+        "078742351933" : {
+          "itemmaterial" : "078742351933",
+          "iteminfo" : "Grocery",
+          "itemmilitar" : "Glacier Watee",
+          "itemdata" : "36"
+        },
+        "099988071416" : {
+          "itemmaterial" : "099988071416",
+          "iteminfo" : "Wine",
+          "itemmilitar" : "Menas",
+          "itemdata" : "14"
+        },
+        "229088304989" : {
+          "itemmaterial" : "229088304989",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Butter Crosant",
+          "itemdata" : "6"
+        },
+        "325866105028" : {
+          "itemmaterial" : "325866105028",
+          "iteminfo" : "medicine",
+          "itemmilitar" : "advil",
+          "itemdata" : "3"
+        },
+        "611935380084" : {
+          "itemmaterial" : "611935380084",
+          "iteminfo" : "sanitizer",
+          "itemmilitar" : "Medex",
+          "itemdata" : "8"
+        },
+        "726282020047" : {
+          "itemmaterial" : "726282020047",
+          "iteminfo" : "Spring Water",
+          "itemmilitar" : "KentWood",
+          "itemdata" : "3"
+        },
+        "788821010025" : {
+          "itemmaterial" : "788821010025",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Achar",
+          "itemdata" : "6"
+        },
+        "796252300196" : {
+          "itemmaterial" : "796252300196",
+          "iteminfo" : "Jucie",
+          "itemmilitar" : "Mango",
+          "itemdata" : "3"
+        },
+        "797677300204" : {
+          "itemmaterial" : "797677300204",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Ghee",
+          "itemdata" : "6"
+        },
+        "806360681008" : {
+          "itemmaterial" : "806360681008",
+          "iteminfo" : "Medicine",
+          "itemmilitar" : "Aleeve",
+          "itemdata" : "5"
+        },
+        "811538011211" : {
+          "itemmaterial" : "811538011211",
+          "iteminfo" : "liquior",
+          "itemmilitar" : "Jhose",
+          "itemdata" : "6"
+        },
+        "9781454922759" : {
+          "itemmaterial" : "9781454922759",
+          "iteminfo" : "Book",
+          "itemmilitar" : "Hamilton",
+          "itemdata" : "33"
+        }
+      },
+      "UserDetails" : {
+        "deptname" : "computer",
+        "email" : "heven@gmail.com"
+      }
+    },
+    "hmOQpsMV5oTVNSVMWLsRaLVPl7G2" : {
+      "email" : "hellopppp@yahoo.com",
+      "name" : "jp"
+    },
+    "love45@gmail" : {
+      "email" : "love45@gmail.com",
+      "name" : "love"
+    },
+    "nam" : {
+      "deptname" : "Tab",
+      "email" : "nam@gmail.com"
+    },
+    "name" : "pppp",
+    "nepal123@gmailcom" : {
+      "UserDetails" : {
+        "deptname" : "McNeese",
+        "email" : "nepal123@gmail.com"
+      }
+    },
+    "nepali1" : {
+      "deptname" : "lab",
+      "email" : "nepali1@gmail.com"
+    },
+    "nischal@gmailcom" : {
+      "ItemByCategory" : {
+        "Food" : {
+          "04963406" : {
+            "itemmaterial" : "04963406",
+            "iteminfo" : "Food",
+            "itemmilitar" : "Coca Cola",
+            "itemdata" : "2"
+          }
+        }
+      },
+      "Items" : {
+        "04963406" : {
+          "itemmaterial" : "04963406",
+          "iteminfo" : "Food",
+          "itemmilitar" : "Coca Cola",
+          "itemdata" : "2"
+        }
+      },
+      "UserDetails" : {
+        "deptname" : "Technology",
+        "email" : "Nischal@gmail.com"
+      }
+    },
+    "nischalaryalty" : {
+      "email" : "nischal.aryalty@gmail.com",
+      "name" : "Nischal"
+    },
+    "ram0onaru" : {
+      "deptname" : "hellp",
+      "email" : "ram0onaru@gmail.com"
+    },
+    "yam" : {
+      "deptname" : "yab",
+      "email" : "yam@gmail.com"
+    }
+  }
+}

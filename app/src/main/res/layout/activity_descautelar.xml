@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:background="@drawable/background_gradient">
+
+    <EditText
+        android:id="@+id/botaomaterialdelete"
+        android:layout_width="279dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/botaoescaneardelete"
+        android:background="@color/azul2"
+        android:drawableStart="@drawable/ic_qrcode_branco_24dp"
+        android:ems="10"
+        android:hint="Material"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#9CFFFFFF"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/botaoescaneardelete"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/azul1"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_camera_branco_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/deleteItemToTheDatabasebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/azul1"
+        android:textAlignment="center"
+        android:text="Descautelar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

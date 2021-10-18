@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@color/cardview_shadow_end_color"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_gradient"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/viewitemmaterialname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Material:"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemmaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/viewitemmaterialname"
+            android:clickable="false"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/viewitemquantianame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemmaterialname"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="0dp"
+            android:text="Quantia:"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemquantia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemmaterial"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/viewitemquantianame"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/viewitemmilitarname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemquantianame"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="0dp"
+            android:text="Último:"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemmilitar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemquantia"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/viewitemmilitarname"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/viewitemdataname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemmilitarname"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:text="Data:"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemmilitar"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/viewitemdataname"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/viewiteminfoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemdataname"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:text="Info:"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewiteminfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemdata"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/viewitemdataname"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/buttonExcluir"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="#FD0000"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_x_branco_15dp" />
+
+        <TextView
+            android:id="@+id/buttonEditar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/buttonCautelar"
+            android:layout_below="@+id/buttonExcluir"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="#3A58A6"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_lapis_branco_18dp" />
+
+        <TextView
+            android:id="@+id/buttonCautelar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#6A6A6A"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_seta_cima_branco_15dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

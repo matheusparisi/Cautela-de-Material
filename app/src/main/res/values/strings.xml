@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cautela de Material</string>
+    <string name="login_name">Login</string>
+    <string name="cautelar_name">Cautelar Material</string>
+    <string name="adicionar_name">Adicionar ao Inventário</string>
+    <string name="cautelados_name">Materiais Cautelados</string>
+    <string name="inventario_name">Inventário</string>
+    <string name="menu_name">Menu Principal</string>
+    <string name="editar_name">Editar Inventário</string>
+    <string-array name="Destinos">
+        <item>Sem destino</item>
+        <item>Serviço</item>
+        <item>Treinamento</item>
+        <item>Formatura</item>
+        <item>Campo</item>
+        <item>PCI</item>
+        <item>Manutenção</item>
+        <item>Missão externa</item>
+        <item>Outros</item>
+    </string-array>
+</resources>

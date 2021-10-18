@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "251921574082",
+    "firebase_url": "https://cautela-de-material-3a59a-default-rtdb.firebaseio.com",
+    "project_id": "cautela-de-material-3a59a",
+    "storage_bucket": "cautela-de-material-3a59a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251921574082:android:360e5190bfcac4a93c335b",
+        "android_client_info": {
+          "package_name": "br.com.cpor.cauteladematerial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251921574082-b8cnke630ccc8hesvurv8p0o4pgn2qc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOlw2ORuCTQFzS9I9Pb-8hNe58C1h_CJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251921574082-b8cnke630ccc8hesvurv8p0o4pgn2qc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
