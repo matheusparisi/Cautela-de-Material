@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import cauteladematerial.R;
+
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener  {
     private FirebaseAuth firebaseAuth;
     TextView firebasenameview;

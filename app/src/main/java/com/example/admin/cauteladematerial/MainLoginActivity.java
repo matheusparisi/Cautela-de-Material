@@ -22,6 +22,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
+import cauteladematerial.R;
+
 public class MainLoginActivity extends AppCompatActivity {
 
     private EditText Email, Password,passwordresetemail;

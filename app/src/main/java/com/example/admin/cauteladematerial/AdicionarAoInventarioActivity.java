@@ -22,6 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import cauteladematerial.R;
+
 public class AdicionarAoInventarioActivity extends AppCompatActivity {
     private EditText iteminfoET, itemmaterialET, itemquantiaET;
     public static TextView itemmaterialETQRCODE;

@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:screenOrientation="portrait"
     android:background="@drawable/background_gradient"
-    tools:context=".MainLoginActivity"
     android:orientation="vertical" >
 
     <ImageView

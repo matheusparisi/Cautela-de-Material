@@ -28,6 +28,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import cauteladematerial.R;
+
 public class CautelarDoInventarioActivity extends AppCompatActivity {
     private EditText itemmilitarET, iteminfoET, itemmaterialET, itemquantiaET;
     private Spinner itemdestinoSpinner;

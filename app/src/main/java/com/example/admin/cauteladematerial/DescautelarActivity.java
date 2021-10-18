@@ -17,6 +17,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import cauteladematerial.R;
+
 public class DescautelarActivity extends AppCompatActivity {
     public static TextView resultdeleteview;
     private FirebaseAuth firebaseAuth;

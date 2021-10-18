@@ -32,6 +32,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import cauteladematerial.R;
+
 public class BuscarCauteladosActivity extends AppCompatActivity {
     public static EditText resultsearcheview;
     private static Context mContext;
